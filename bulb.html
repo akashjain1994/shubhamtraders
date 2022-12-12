@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <img id="bulb" src="b-off.png" alt="off" />
+    <button onclick="light(0)">on</button>
+    <button onclick="light(1)">off</button>
+    <script>
+      function light(vlaue) {
+        var pic;
+        if (vlaue == 0) {
+          pic = "b-on.png";
+        } else {
+          pic = "b-off.png";
+        }
+        document.getElementById("bulb").src = pic;
+      }
+    </script>
+  </body>
+</html>
